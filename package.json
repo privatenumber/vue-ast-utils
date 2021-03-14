@@ -1,0 +1,63 @@
+{
+	"name": "vue-ast-utils",
+	"version": "0.0.0-semantic-release",
+	"description": "",
+	"keywords": [
+		"vue",
+		"ast",
+		"template",
+		"node",
+		"utils",
+		"typed"
+	],
+	"license": "MIT",
+	"repository": "privatenumber/vue-ast-utils",
+	"funding": "https://github.com/privatenumber/vue-ast-utils?sponsor=1",
+	"author": {
+		"name": "Hiroki Osame",
+		"email": "hiroki.osame@gmail.com"
+	},
+	"files": [
+		"dist"
+	],
+	"main": "dist/index.js",
+	"scripts": {
+		"lint": "eslint .",
+		"build": "tsc"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"eslint",
+			"jest --bail --findRelatedTests"
+		]
+	},
+	"peerDependencies": {
+		"@vue/compiler-core": "^3.0.7"
+	},
+	"devDependencies": {
+		"@pvtnbr/eslint-config-typescript": "^0.1.12",
+		"@vue/compiler-core": "^3.0.7",
+		"eslint": "^7.22.0",
+		"husky": "^4.3.8",
+		"lint-staged": "^10.5.4",
+		"typescript": "^4.2.3"
+	},
+	"eslintConfig": {
+		"extends": "@pvtnbr/eslint-config-typescript",
+		"rules": {
+			"unicorn/prevent-abbreviations": [
+				"error",
+				{
+					"replacements": {
+						"prop": false
+					}
+				}
+			]
+		}
+	}
+}

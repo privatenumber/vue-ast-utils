@@ -1,0 +1,10 @@
+{
+	"include": ["src"],
+	"compilerOptions": {
+		"outDir": "dist",
+		"lib": ["es2018"],
+		"target": "es2018",
+		"moduleResolution": "node",
+		"declaration": true
+	}
+}
