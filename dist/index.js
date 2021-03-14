@@ -1,5 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isSimpleExpression = exports.isDirective = exports.isAttribute = exports.isElement = void 0;
 const isElement = (node) => ((node === null || node === void 0 ? void 0 : node.type) === 1 /* ELEMENT */);
+exports.isElement = isElement;
 const isAttribute = (node) => ((node === null || node === void 0 ? void 0 : node.type) === 6 /* ATTRIBUTE */);
+exports.isAttribute = isAttribute;
 const isDirective = (node) => ((node === null || node === void 0 ? void 0 : node.type) === 7 /* DIRECTIVE */);
+exports.isDirective = isDirective;
 const isSimpleExpression = (node) => ((node === null || node === void 0 ? void 0 : node.type) === 4 /* SIMPLE_EXPRESSION */);
-export { isElement, isAttribute, isDirective, isSimpleExpression, };
+exports.isSimpleExpression = isSimpleExpression;
