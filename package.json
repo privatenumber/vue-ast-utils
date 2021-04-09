@@ -1,9 +1,10 @@
 {
 	"name": "vue-ast-utils",
 	"version": "0.0.0-semantic-release",
-	"description": "",
+	"description": "Utils for working with Vue 3 AST nodes",
 	"keywords": [
 		"vue",
+		"vue 3",
 		"ast",
 		"template",
 		"node",
@@ -31,10 +32,7 @@
 		}
 	},
 	"lint-staged": {
-		"*.js": [
-			"eslint",
-			"jest --bail --findRelatedTests"
-		]
+		"*.{js,ts}": "eslint"
 	},
 	"peerDependencies": {
 		"@vue/compiler-core": "^3.0.7"
