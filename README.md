@@ -9,8 +9,7 @@ Vue 3 comes with types, but ambient const enums cannot be accessed when building
 import { NodeTypes } from '@vue/compiler-core';
 
 console.log(NodeTypes.ATTRIBUTE === Node.type);
-
-// Cannot access ambient const enums when the '--isolatedModules' flag is provided. ts(2748)
+// ⚠️ Cannot access ambient const enums when the '--isolatedModules' flag is provided. ts(2748)
 ```
 
 Related issue: [vue-next#1228](https://github.com/vuejs/vue-next/issues/1228)
