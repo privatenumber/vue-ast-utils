@@ -21,6 +21,7 @@
 	"files": [
 		"dist"
 	],
+	"type": "module",
 	"main": "dist/index.js",
 	"scripts": {
 		"lint": "eslint .",
